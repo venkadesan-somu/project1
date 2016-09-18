@@ -1,0 +1,133 @@
+
+
+/* Setting 0 value for margin and padding of all selectors */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* General */ 
+
+body{
+	font-family: helvetica, sans-serif;
+	background-color: #f3f7f9;
+}
+
+ul, ol{
+	list-style: none;
+}
+
+.clear{
+	clear: both;
+}
+
+a{
+	text-decoration: none;
+}
+/* Container */
+
+
+/* Header */
+
+.head{
+    background-color: #283442;
+    
+	overflow: auto;
+	
+	width: 100%;
+	
+}
+
+.head .logo-img{
+	width: 100px;
+    height: auto;
+    margin: 2px 0 2px 15px;
+    float: left;
+}
+
+.nav-bar{
+	text-align: right;
+	text-align: right;
+    margin: 35px 15px 35px 0;
+}
+
+.nav-bar a{
+	color: #fff;
+    text-align: center;
+    padding: 10px 25px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.nav-bar a.active {
+	margin-left: 0;
+}
+
+.nav-bar a:hover{
+	background-color: #ff0000;
+	border-radius: 6px;
+    transition: all 0.7s linear;   
+}
+
+.nav-bar a.active {
+	background-color: #ff0000;
+	border-radius: 6px;
+}
+
+.nav-bar a.login-icon {
+	background-color: #ff0000;
+    color: #000;
+    border: 2px solid transparent;
+} 
+
+.nav-bar a.login-icon:hover{
+    border: 2px solid rgb(255, 255, 34);
+    border-radius: 0;
+    transition: all 0.5s linear;
+}
+
+a.stick-menu{
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+
+@media screen and (max-width: 700px) {
+  .nav-bar a{
+  	display: none;
+  }
+
+  .nav-bar a.stick-menu {
+    float: right;
+    display: inline-block;
+  }
+
+}
+
+@media screen and (max-width:680px) {
+  nav.nav-bar.responsive {position: relative;}
+  nav.nav-bar.responsive a.stick-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+.logo-img{
+	float: none;
+}
+
+  nav.nav-bar.responsive a {
+    float: none;
+    display: inline;
+    margin-top: 100px;
+  }
+  
+  nav.nav-bar.responsive a {
+    display: block;
+    text-align: left;
+  }
+}
+
